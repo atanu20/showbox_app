@@ -15,7 +15,7 @@ const TrendingVideo = ({ trendVideo }) => {
         grabCursor={true}
         spaceBetween={5}
         slidesPerView={'auto'}
-        loop={true}
+        loop={trendVideo.length > 2}
         autoplay={{ delay: 3000 }}
       >
         {trendVideo?.map((val, ind) => {
